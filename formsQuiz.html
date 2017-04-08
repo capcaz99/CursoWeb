@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<p> 
+		<label for="Fname">First Name:</label>
+		<input name="Fname" id="Fname" type="text" placeholder="Carlos" required>
+		<label for="Lname">Last Name:</label>
+		<input name="Lname" id="Fname" type="texT "placeholder="Aburto" required>
+	</p>
+	<p>
+		<label for="male">Male</label>
+		<input name="sex" id="male" type="radio" value="m">
+		<label for="female">Female</label>	
+		<input name="sex" id="female" type="radio" value="f">
+		<label for="other">Other</label>
+		<input name="sex" id="other" type="radio" value="o">
+	</p>
+	<p>
+		<label for="email">Email:</label>
+		<input name="Email" id="email" type="email" required>
+		<label for="pass">Password:</label>
+		<input name="pass" id="pass" type="password" pattern=".{5,10}" required title="5 to 10 characters">
+	</p>
+	<p>
+		Birthday:
+		<select name="month" >
+			<option selected>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Dic</option>
+		</select>
+		<select name="Day" >
+			<option selected>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>31</option>
+		</select>
+		<select name="Year" >
+			<option selected>Year</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+
+		</select>
+	</p>
+	<p>
+		<label for="agree">I agree to the <a href="http://www.twitter.com">terms and conditions</a> </label>
+		<input name="agree" id="input" type="checkbox" required title="You must agree to the terms">
+	</p>
+
+
+	<button>Submit</button>
+
+</form>
+
+</body>
+</html>
