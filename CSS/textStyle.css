@@ -1,0 +1,44 @@
+/*Font family*/
+
+/*Font size*: puedes usar px o puedes tamnién usar em que es un valor realtivo 
+por ejemplo el doble del papa, si no hay papa tomará el papa como 60 px pero es 
+mejor ponerlo en el body*/
+
+/*font weight es que tan gruesas son las líneas, se puede poner bold pero
+para algunas te permite poner un numerp entre 100-800 (centenas nada más)
+para elegir que tan gruesas son */
+
+/*line-height es la separación entre líneas*/
+
+/*text-align es hacia donde esta alineado :)*/
+
+/*text-decoration pues para decorar apa*/
+
+/*Podemos usar también de google fonts*/
+p{
+	font-family: "Arial";
+	font-weight: bold;
+	line-height: 1.5;
+
+}
+
+h1{
+	font-family: "Press Start 2P";
+	font-size: 20px
+	
+}
+
+span{
+	font-size: 2.0em
+
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	text-decoration: underline;
+}
+
+
