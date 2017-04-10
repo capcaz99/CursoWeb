@@ -1,0 +1,27 @@
+/*Veremos ahora tres tipos de selectores:
+
+Element Selector: 
+selecciona todos los elementos de el tipo que tu indiques.
+ID selector:
+Para seleccionar uno, usamos un ID como atributo de cualquier elemento
+y después en el CSS usamos #ID en vez del nombre del elemento
+class selector:
+si queremos seleccionar muchos pero no todos hacemos una clase
+en el elemento usamos una class="" y en  css usamos .class*/
+
+
+
+
+
+body{
+	background: orange
+}
+
+#tres{
+	color: green;
+}
+
+.check{
+	/*es una manera de editar el texto*/
+	text-decoration: line-through; 
+}
