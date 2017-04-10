@@ -1,0 +1,50 @@
+
+<!-- La herencia aplica para CSS, si ponesun estilo para el papa
+se va a heredar para los hijos también -->
+
+<!-- Cuando hay varios estilos que se heredan a un solo elemento
+como en este caso a los LI le llega el rojo, el azul y el amarillo
+css tiene que elegir cual ponerle y va a elegir el que es más específico
+ -->
+
+ <!-- http://specificity.keegan.st/ para saber la specifity
+	por orden:
+
+		type
+		class, attribute and pseudo-slass
+		id selectors
+
+  -->
+
+<html>
+<head>
+	<title>Specificity</title>
+
+	<style type="text/css">
+	body{
+		color: red;
+	}
+	ul{
+		color: blue;
+	}
+	.high{
+		color: yellow;
+	}
+	#one{
+		color: green;
+	}
+	</style>
+</head>
+<body>
+<p>Hello</p>
+<ul>
+	<li id="one" class="high">John</li>
+	<li>Pauk</li>
+	<li>George</li>
+	<li class="high">Ringo</li>
+
+</ul>
+
+
+</body>
+</html>
