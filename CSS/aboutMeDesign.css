@@ -1,0 +1,37 @@
+/*Lo meojor es usar hexadecimal para los colores, porque usar los nombres no funciona muy bien
+se pone #123456 rgb
+
+también podemos usar rgb(r,g,b);
+o tambien rgba rgba(r,g,b,t);*/
+
+/*para cambiar el background usamos en vez de color background*/
+
+/*para border tiene tres partes que tienene que estar para que funcione
+color 
+width
+stye   solid dashed*/
+h1 {
+	color: red;
+	border: 5px solid purple;
+	/*       witdh style color*/
+}
+
+li{
+	color: green;
+}
+
+h4{
+	color: purple;
+	background: blue;
+}
+
+body{
+	background: url(https://static.pexels.com/photos/7132/wood-texture-trees.jpg);
+/*Hay veces que la foto no es del tamaño para cubirir todo
+y se repite muchas veces o no se llena entonmces
+podemos usar background-repeat: no-repeat
+backround-size: cover; */
+	background-size: cover;
+	background-repeat: no-repeat;;
+
+}
