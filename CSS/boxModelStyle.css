@@ -1,0 +1,33 @@
+p{
+	/*Content - width and Height*/
+
+	/*width: 200px;*/
+	width: 50%;
+
+	/*no tienen que ser pixeles, también se pueden poner porcentajes
+	con respecto a donde estás, en este caso esta en el body entonces
+	si ponemos 50% será la mitad del body, la ventaja de eso es que 
+	si cambias el tamaño de la pantalla en el brower todo tambie con eso*/
+
+	/*Border: en este caso lo cambia para todos los lados pero puedes
+	cambiar solo el de arrbia o solo el de abajo, etcétera*/
+	border: 2px solid blue;
+
+	/*Padding: la distancia entre el contenido y el border. Si pones solo padding
+	se cambia para todos los lados pero también se puede cambiar
+	para cada lado en particular*/
+
+	padding: 20px;
+
+	/*Margin: el espacio entre elementos. Tambiémn puede ser todo o en particular*/
+
+	margin: 100px;
+	/*puede ser tambien margin-top, margin-bottom bla bla
+	o lo puedes poner como en el border los cuatro
+	margin: top px right px bottom px left px
+	si es el mismo arriba y abajo y el misdo derecho e izquiero 
+	puedes solo poner margin: arrAb derIzq
+
+	si ponemos auto en derecho izquierdo lo que hara es centrar el 
+	elemento por nosotros*/
+}
