@@ -1,0 +1,36 @@
+TIpos
+
+//Números
+
+Todos loos números se tratan igual, no hay diferencia entre enteros, decimales, positivos o negativos. 
+
+//String
+Pueden ser "" o ''
+Para concatenar se pone + 
+"hello"+"bye"
+
+Para poner un " en el string tenemos que poner \ -> "ella dijo \"hola\" "
+Para ver un \ tenemos que poner \\
+
+"string".length -> Tamaño de string.
+"stirng"[0] -> s
+
+//boolean
+
+Estos son solo valores, no hay tipos. 
+
+//null
+vacío
+
+//undefined
+Variabes definidas pero sin valor
+
+
+
+//Variables
+
+Las variables son de todos los tipos
+
+var nombre = valor;
+
+Puedes cambiar el tipo cuano quieras a java no le importa 

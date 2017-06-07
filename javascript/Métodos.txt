@@ -1,0 +1,15 @@
+Métodos
+
+// Alert
+Manda un mensaje al usuairo en un popup
+ alert();
+
+// Console.log
+Imprime algo en la consola 
+console.log();
+
+// Prompt
+Es para que el usuario nos de información 
+promt("");
+Lo que esta en el texto sale en un popup y ahi escribes. 
+Se puede guardar en una variable. 
