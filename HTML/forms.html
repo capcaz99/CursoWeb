@@ -1,0 +1,56 @@
+
+<!-- Vamos a hacer formas de front END, no hay nada de lógica no funcionan aun -->
+<!-- from tag es lo que junta todo lo que vas a enviar al back end  -->
+<!-- POR EJEMPLO EL LOGIN DE FACBOOK -->
+<!-- Se conforma de dos partes:
+
+action: a la página a la que van los datos. 
+Si no se especifica será la página en la que estas
+
+method: que tipo de HTTP request estas haciendo
+get request: estas pidiendo infromación
+post request: esta metiendo información en la base 
+Si no se especifica sera get
+-->
+
+
+<!-- input tag
+es el input que va a haber
+
+tiene un atributo type en el que eliges que vas a meter
+ -->
+
+ <!-- los inpiuts tiene un atributo que es placeholder que es lo que va a estar ahí antes de que el usuario lo cambie -->
+
+ <!-- puedes ponerle un name atributte a cada type para recibir y enviar los datos -->
+
+ <!-- Usamos labels para que sea más interactivo y el usuario sepa que hace cada parte del form. -->
+
+ <!-- id es para conectar con forms y name es para cuando evías los datos -->
+
+ <!-- Ahora hablaremos de FORMS validation con solamente HTM, no tan complicado 
+para poderlo hacer utulizamos el atributo REQUIRED, es un booleano, indica que este no puede estar vacío, no funciona en cualquier browser, chrome si.
+
+Si queremos que sea para email tenemos que hacer que el tipo sea email y automaticmante va a pedir que esté en el formato
+  -->
+<html>
+<head>
+	<title>Inputs examples</title>
+</head>
+<body>
+	<h1>Singn in</h1>
+	<form action = "http://wikipedia.com" method = "GET">
+		<label>
+			Username:
+			<input name="email" type="email" placeholder="email" required>
+		</label>
+		<label for = "pass">Password</label>
+		<input id="pass" type="password" placeholder="password">
+		<input type="color">
+		<input type="radio">
+		<button>Login</button>
+
+
+	</form>
+</body>
+</html>

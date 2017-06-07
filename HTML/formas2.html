@@ -1,0 +1,52 @@
+<!-- radio button: para seleccionar si-no
+	 select tag: drop down.
+	 text area tag: multiple line text 
+
+
+ -->
+
+
+
+
+
+
+<html>
+<head>
+	<title>Mas inputs</title>
+</head>
+<body>
+	<!-- no se puede quitar ya que se pico -->
+	<!-- <input type="radio">  -->
+	<!-- este si se puede quitar -->
+	<!-- <input type="checkbox">  -->
+<!-- como solamente podemos elegir uno en este ejemplo vamos a darle a los dos el mismo atributo name para que cuando lo elijas solo te deje elegir uno y no los dos. -->
+
+<!-- si pones un boton al final de la forma entonces hara el submit. -->
+
+<!-- tenemos que ponerle un atributo value para que cuando lo envíes se vaya con es valor y no solo "on" -->
+	<p>Do you prefer cats or dogs?</p>
+	 <form>
+	 	<label for="dogs">Dogs:</label>
+	 	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+	 	
+	 	<label for="cats">Cats:</label>
+	 	<input name="petChoice" id="cats" type="radio"value="CATS">
+	 	
+	 	<p>what's tour favorite color?</p>
+	 	<!-- drop down y usamos option para cad aopcion que queremos que el usuario elija 
+	 	hay que ponerle tambien name a select
+	 	el value lo usas en cada ocpión-->
+	 	<select name="color">
+	 		<option value="r">Red</option>
+	 		<option value"o">Orange</option>
+	 		<option value="y">Yellow</option>
+
+	 	</select>
+	 	<!-- podemos espcificar de que tamaño queremos que sean las columnas y las filas -->
+	 	<p>Tell me something about you!</p>
+		<textarea name ="paragraph" rows="10" cols="10"></textarea>
+
+	 	<button>Go!</button>
+	 </form>
+</body>
+</html>
