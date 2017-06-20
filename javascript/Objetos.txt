@@ -1,0 +1,30 @@
+Objetos:
+
+Lo creas de la siguiente manera:
+
+var person = {  
+	propiedad: valor,
+	propiedad: valor
+};
+
+Se puede sacar la propiedad de la siguiente manera:
+
+person.propiedad
+person["propiedad"]
+
+No se puede usar la notacion de punto si la propiedad empieza con número o si tiene espacios.
+Si vas a haverlo con una variable (objeto.variable) no va a funcionar pero si lo hacers con la otra notación si lo hará. 
+
+Para cambiar nada mas lo haces como lo escribes para sacar la propiedad y le pones igual para reasignarlo. 
+
+
+Puedes crear el objeto vacío o lo puedes hacer con todo explícito:
+
+var objeto = {}
+objeto.propiedad = valor
+
+var objeto = {
+	propiedad = valor
+}
+
+Cada propiedad puede ser el tipo que sea. 

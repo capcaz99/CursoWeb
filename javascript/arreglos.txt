@@ -1,0 +1,22 @@
+//Arreglos
+Tdodos los arreglos son de tipos mezclados y no se pone el tamaño, pueden agregarse cosas siempre. 
+
+
+Métodos:
+push y pop --> Lo hacen al final. Regresa el número del arreglo donde lo estas metiendo, no el índice del arreglo si no el número de elementos. 
+
+shif y unshift --> lo hacen al principio. 
+
+pop y unshift regresan el elemento que sacas. 
+
+indexOf(elemento) --> regresa el index del elemento que estas ponienod, si no esta regresa -1. Si esta repetido regresa la primera ocurrencia. 
+
+slice(num, numer)---> Corta el arreglo de num a numer, es no inclusivo.
+
+splice(num, numer)----> Borra a patir de num el numer que tu pongas 
+
+
+arr.forEach(funcion);
+Hace la función para todos los elementos del arreglo 
+SI defines la función antes lo pones sin parentesis, también se puede definir ahi y pones todo la función dentro 
+SIempre que le hables a una función desde otra función si lo pones con parentesis se ejecuta automaticamente. 
