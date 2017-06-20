@@ -28,3 +28,22 @@ var objeto = {
 }
 
 Cada propiedad puede ser el tipo que sea. 
+
+Pueden haber métodos tamnién, no solamente propiedades. 
+
+var person = {  
+	propiedad: valor,
+	propiedad: valor
+	metodo: funcion(){};
+};
+
+
+Se puede usar en las funciones la apalabra this.
+
+var person = {  
+	propiedad: valor,
+	propiedad: valor
+	metodo: funcion(){
+	console.log(this.propiedad);
+	};
+};
