@@ -10,6 +10,6 @@ console.log();
 
 // Prompt
 Es para que el usuario nos de información 
-promt("");
+prompt("");
 Lo que esta en el texto sale en un popup y ahi escribes. 
 Se puede guardar en una variable. 

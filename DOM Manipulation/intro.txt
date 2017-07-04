@@ -1,0 +1,73 @@
+DOM manipulation
+
+Para poder hacer DOM neceistas poner el JS al final del body para que cargue primero el html y después trabaje con estos el js. 
+
+DOM
+Document Object Model
+Es lo que usamos para intercatuar HTML, CSS con JS.
+
+CUando abrimos nuestro HTML éste se ve en el browser pero cad uno de los elementos que hay en el mismo se guardan en el documento (D) cada 
+uno como un objeto que podemos manipular. 
+
+Si ponemos en la consola console.dir(document) podemos ver todo el documento de una página. 
+
+
+
+EL proceso para utilizar DOM:
+
+Select and Manipulate:
+S:
+var nombre = document.querySelector(objeto)
+Aqui tendrás enla variable nombre el objeto que seleccionaste. 
+M:
+nombre.propiedad = "cambio". 
+
+
+
+--------SELECTION:--------------
+TODOS devuelven objetos, no devuelven strings. 
+
+document.getElementById():
+	Recibe id y toma el elemento con es id. 
+document.getElementsByClassName();
+	Recibe clase y toma todos los elementos de la clase en una node list. NO tiene un forEach
+document.getElementByTagName();
+	Recibe 	tag y toma todos los elementos de ese tag en una node list. 
+docuemnt.querySelector();
+	Recibe un selector pero como se usa en CSS, es decir, si quieres un id tienes que poner "#id", si quieres una clase tienes que poner ".class", etc.
+	La diferencia con los demás es que éste solamente toma UN elemento, el primero que encuentra, no toma todos si son más de uno. 	
+document.querySelectorAll();
+	Este es igual que el anterior pero si toma todos los que hay, no sólo el primero. 
+
+
+
+-------MANIPULATION-------------
+nombre.propiedad = cambio. 
+
+-----Style
+La primera propiedad es style:
+nombre.style.propiedad = "cambio". 
+
+Hay veces que haces varios cambios de estilo en JS y se puede ver sucio que lo hagas separado por lo que se puede hacer de otra manera:
+Creas una clase en CSS que contenga todos los cambios que quieres ponerle a tu tag y despues lo seleccionas y haces lo siguiente:
+	nombre.classList.add("clase");
+También se puede hacer:
+	nombre.classList.remove("clase");
+	nombre.classList.toggle("clase");   Esta si el tag tiene la clase se la quita y si no la tiene se la pone. 	
+
+------Contenido
+
+tag.textContent="bla bla";    Elimina los elementos de html que hay, solamente toma el texto y cuando lo cambia solamente pone texto. 
+tag.innerHtml="";				Si mantiene los tags de HTML.
+Ambos cambian por COMPLETO lo que estaba antes. No sirve mucho para interactuar con el contenido. 
+
+textContent solamente trata lo que pones ahí como texto, no como html, si lo haces con innerHtml si funcionan los tags. 
+
+-------Atributos
+
+Para obtener atributos como src o href utilizamos:
+	tag.getAttribute("atributo");
+Para cambiarlo:
+	tag.setAttribute("atributo", "nuevo");
+
+

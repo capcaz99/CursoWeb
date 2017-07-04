@@ -1,0 +1,21 @@
+Dom Events
+
+
+Seleccionamos a un elemento y después colocamos a un event listener.
+
+element.addEventListener(type, functionToCall);
+
+type: tipo del evento que vas a escuhar
+fucntionToCall: la función que se hará. 
+
+Se pueden tener mas de un Listener por elemento y se harán en el orden en que los agregaste.
+
+
+Eventos más usados:
+
+		mouseover:	Si pasamos por ecnima de algo. Se queda así una vez que lo haces. Para quitarlo debemos usar otro método. 
+		mouseout: Cuando lo dejas de tener con el mouse.
+		click 
+		change
+		VER PÁGINA MDN
+		
