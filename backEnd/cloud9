@@ -1,0 +1,28 @@
+Es un ambiente de desarrollo que está en internet en donde puedes hacer todo lo que nececites rapidamente y facilmente. 
+
+https://ide.c9.io/learnwithcolt/webdevbootcamp
+
+------------Consola--------------
+Todos los comandos tienen tres partes:
+	1)Utility - Son los comandos. Indican la idea general de lo que quieres. 
+	2)Flags - Son como ocpiones o preferencias que alteran como funciona la utilidad. 
+	3)Arguments
+
+---Comandos:
+	man $UTIL : Es el manual, en el argumento pones que instrucción quieres y te dice como funciona. 
+	ls $DIR : Lista el contenido del directorio. 
+				Si le das como bandera -l te da más infromación de lo normal 
+				Si le das como bandera -F te dice cuales son archivos y cuales son folders. 
+				Si le das como bandera -a te muestra los links ocultos como . y .. 
+	cd $DIR: Change Directory. 	
+
+	pwd : Print Working Directory
+	less $FILE: Te da el contenido de un documento. Sales con Q
+	cp $FILE $LOCATION: Copia el archivo en esa localidad. 
+	mv $FILE $LOCATION: Mueve el archivo a esa localidad. 
+	rm $FILE: Elimina el archivo para SIEEEEMPREEEEEE. 
+				Si le das como bandera -rf (recursive force) Borra un directorio y todo lo que está adentro. 
+	sudo $CMD: Super User Do. Te permite hacer lo que tu quieras :).
+	mkdir nombre : Make Directory
+	touch nombre: Crea archivos. 
+
