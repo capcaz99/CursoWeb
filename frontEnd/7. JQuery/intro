@@ -1,0 +1,110 @@
+JQUERY
+
+Es una libreria de JS para hacer todo más facilmente que puedes copiar en tu código. 
+
+Puedes descargarlo o jalarlo desde la página
+Para descargar hay dos, el comprimido y el descompirmido. 
+En el src del script pones el link si lo descargaste usas un CDN (CONTENT DISTRIBUTED NETWORK)
+
+Si lo pones en tu página corres en la consola jQuery y $ y si funciona enonces esta correctamente. 
+
+
+
+/////SELECTORS
+
+$("SELECTOR")
+El selector es con CSS entonces es igual para las clases . y para los id #.
+Siempre devuelve una lista
+
+
+
+//////Métodos
+elemento.css("property", "value");
+Puedo pasarle también un objeto
+var style = {
+	estilo : "propiedad", estilo:"propiedad"
+};
+
+Si el elementoque usas para css es una lista se hace para todos en la lista, no tienes que hacer uno por uno. 
+Si sólo pones la propiedad te devuelve el valor actual. 
+
+element.text();
+Si lo pones sin valores te regresa el texto que hay en ese elemento, y en todos su decendientes todo combinado. 
+Si le das un valor actualiza el texto de ese elemento. 
+Si lo haces en una lista de elementos lo cambia en todos. 
+
+element.html();
+Te da el primer contenido html del primer elmento de lo seleccionado o cambia el contenido html de todos los elementos que elegiste. 
+
+element.attr();
+Te devuelve el valor de un atributo para el primer elemento de los seleccionado o cambiar uno o muchos atributos para todos los que elegiste.
+Si lo pasas como un objeto puedes cambiar varias a la vez. 
+
+Para elegir el primero puedes usar "busqueda: first-of-type" y para el ultimo hay un método .last() que te devuelve el útlimo.
+
+element.val(); 
+Nos devuelve el valor de un input y también si le das un argumento lo cambia. 
+
+
+element.addClass();
+Agrega la clase que le das como argumento a todos los elementos seleccionados. 
+Funciona igual con los métodos siguientes:
+element.removeClass();
+element.toggleClass(); (lo hace para todos pero de manera individual).
+	
+
+element.append("html");
+Este método selecciona todos los element y les pega lo que mandas como argumento y lo lee como html.	
+
+/////Eventos
+
+element.click(function{});
+Agrega un click listener a un elemento o a una lista de elementos. 
+En jQuery no funciona this.algo tienes que hacerlo así $(this)
+
+KEY:
+element.keyDown();
+element.keyUp();
+element.keypress();
+
+Down y Up se disparan cuando presionas la tecla y Press se dispara con el caracter.
+Si pones una A mayúscula U y D se van a disparar con shift y con la a y P se va a disparar con la A.
+
+Como argumento das una función. En la función puedes poner como argumento "event" y este tiene varias propiedades, una de ellas es wich y con esta puedes saber cual es el código de la tecla que piso el usuario. 
+En html, si haces click en los hijos se va a disparar todo hacia arriba. Es decir se dispararan todos los eventos relacionados con lo que tenga de padre. 
+Para evitar esto se puede utilizar el metodo 
+
+					event.stopPropagation();
+
+
+element.on("evento", funcion{});
+
+La diferencia entre on('click') y click() es que el segundo lo agrega solamente a los elementos que ya existen en la lista a diferencia del segundo que lo agrega tambien a los elementos potenciales. 
+Para que pueda ser en los potenciales tienes que ponerselo al padre y dar como otro argumento al hijo que se lo quieres poner. 
+Por ejemplo si se lo estás poniendo en una "li" que está adentro de un "ul" pones $("ul").on("click", "li", funcion(){});
+
+
+
+/////Efectos
+------Fadding------
+Altera la opacidad.
+elemento.fadeOut();
+Default: 4 segundos.
+
+Si quieres hacer algo hasta que el fade out haya terminado podemos ponerle una función calback elemento.fadeOut("tiempo", duncion(){})); Y lo que está adentro se hara hasta que haya pasasdo el tiempo del faceOut.
+
+Para quitar elementos de html podemos hacer elemento.remove(); Y se quita.
+
+También se puede fade in: elemento.fadeIn();
+
+elemento.fadeToggle();  Si está lo quita y si no está lo pone. 
+
+
+
+-------Slide------
+Lo que hace es alterar la altura entonces aparece y se va como "cortina".			
+elemento.slideDown();
+elemento.slideUp();
+elemento.slideToggle();
+
+También puedes darle tiempo y la función callback. 

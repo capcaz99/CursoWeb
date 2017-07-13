@@ -1,0 +1,33 @@
+Back End
+
+////Pequeño resumen de como funciona el Internet.
+Cuando entramos a una página de internet lo primero que se hace es llamar al DNS para convertir el dominio en una dirección ip y mandarla de regreso al usuario. 
+Después se manda una solicitud a la dirección ip que te dieron se recibió del dns via http.
+El servidor al que le mandaste la solicitud ve que es lo que le estás pidiendo y te manda todo. 
+Todo te lo manda de regreso vía http y el explorador de internet convierte el codigo en lo que ves en tu ventana. 
+
+////Static vs Dynamic
+Static: 
+Es siempre el mismo html, css y javascript. 
+Dinamico:
+Te envía distintos html, ccss y javascript cada vez. El servidor decide que enviarte cada vez. 
+
+
+
+A generic stack:   (stackshare.io)
+(Las tecnologías que utilizamos para una página o una tecnología)
+En front end tenemos html, css y js.
+En back end tenemos el lenguaje que utilizamos, la base de datos, etcétera. 
+
+
+
+-------------HTTP-------------
+(Usaremos PostMan para aprender un poco más sobre solicitudes de http)
+Las solicitudes de http son independientes de los browsers, se pueden hacer de distintas partes. 
+
+Cuando hacemos una solicitud recibimos tres grandes partes:
+		1) El cuerpo: html, css y Js. 
+		2) La sgunda parte son los headers. Son los metadatos de la respuesta. Te dice que te está enviando, en este caso html, te dice que día y a que hora, 
+		3) Dentro del headers: Status. Es lo que te dice que está pasando. Por ejemplo, el error 404 cuando no encuentra la página. 
+
+Desde el browser solamente se pueden hacer Get request, no se puede hacer Post request. Pero si se puede agregar información a esta request con el query String. Siempre empieza con un ? y todo lo que se envía se separada con &. 

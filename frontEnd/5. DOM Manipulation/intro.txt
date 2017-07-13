@@ -31,7 +31,7 @@ document.getElementById():
 	Recibe id y toma el elemento con es id. 
 document.getElementsByClassName();
 	Recibe clase y toma todos los elementos de la clase en una node list. NO tiene un forEach
-document.getElementByTagName();
+document.getElementsByTagName();
 	Recibe 	tag y toma todos los elementos de ese tag en una node list. 
 docuemnt.querySelector();
 	Recibe un selector pero como se usa en CSS, es decir, si quieres un id tienes que poner "#id", si quieres una clase tienes que poner ".class", etc.
